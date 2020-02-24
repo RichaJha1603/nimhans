@@ -1,0 +1,15 @@
+<!--<label for="adbs-search">Search by ADBS Number</label>
+<input type="search" id="adbs-search" name="q"
+       aria-label="Search through adbs database">
+
+-->
+<mat-form-field floatLabel="never" appearance="outline">
+    <mat-label>ADBS ID</mat-label>
+    <input matInput type="search" [(ngModel)]="textArea">
+    {{textArea}}
+</mat-form-field>
+<div class="wrapper">
+    <button mat-flat-button  (click)="onClickButton()" >View</button>
+</div>
+
+
